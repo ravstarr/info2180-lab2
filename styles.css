@@ -1,0 +1,173 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* Base styles */\
+body \{\
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;\
+    font-size: 18px;\
+    color: #2D3748;\
+    margin: 0;\
+    padding: 0;\
+    line-height: 1.6;\
+\}\
+\
+.container \{\
+    display: grid;\
+    grid-template-columns: 3fr 1fr;\
+    grid-template-rows: auto auto auto;\
+    grid-template-areas:\
+        "header header"\
+        "main aside"\
+        "footer footer";\
+    max-width: 1200px;\
+    margin: 0 auto;\
+    gap: 20px;\
+\}\
+\
+/* Header styles */\
+header \{\
+    grid-area: header;\
+    background-color: #63B3ED;\
+    color: #FFFFFF;\
+    padding: 30px;\
+\}\
+\
+.header-content \{\
+    display: flex;\
+    flex-direction: column;\
+    justify-content: center;\
+    align-items: center;\
+    text-align: center;\
+\}\
+\
+.profile-image \{\
+    width: 150px;\
+    height: 150px;\
+    border-radius: 50%;\
+    object-fit: cover;\
+    margin-bottom: 15px;\
+\}\
+\
+header h1 \{\
+    font-family: Georgia, 'Times New Roman', Times, serif;\
+    font-size: 36px;\
+    margin-bottom: 10px;\
+\}\
+\
+/* Main content styles */\
+main \{\
+    grid-area: main;\
+    padding: 20px;\
+\}\
+\
+article \{\
+    margin-bottom: 40px;\
+    border-bottom: 1px solid #E2E8F0;\
+    padding-bottom: 20px;\
+\}\
+\
+article h2 \{\
+    font-size: 32px;\
+    color: #48BB78;\
+    margin-bottom: 5px;\
+\}\
+\
+.blog-date \{\
+    color: #718096;\
+    margin-bottom: 20px;\
+\}\
+\
+.blog-image \{\
+    float: left;\
+    width: 200px;\
+    height: auto;\
+    margin-right: 15px;\
+    margin-bottom: 10px;\
+\}\
+\
+.blog-image-right \{\
+    float: right;\
+    width: 200px;\
+    height: auto;\
+    margin-left: 15px;\
+    margin-bottom: 10px;\
+\}\
+\
+/* Sidebar styles */\
+aside \{\
+    grid-area: aside;\
+    padding: 20px;\
+\}\
+\
+aside section \{\
+    margin-bottom: 30px;\
+\}\
+\
+aside h3 \{\
+    font-family: Georgia, 'Times New Roman', Times, serif;\
+    margin-bottom: 15px;\
+\}\
+\
+.about h3 \{\
+    color: #000000;\
+\}\
+\
+.social h3, .archives h3 \{\
+    color: #48BB78;\
+\}\
+\
+.about \{\
+    background-color: #E2E8F0;\
+    padding: 15px;\
+    border-radius: 5px;\
+\}\
+\
+aside ul \{\
+    list-style-type: none;\
+    padding-left: 0;\
+\}\
+\
+aside li \{\
+    margin-bottom: 8px;\
+\}\
+\
+aside a \{\
+    color: #4299E1;\
+    text-decoration: none;\
+\}\
+\
+aside a:hover \{\
+    text-decoration: underline;\
+\}\
+\
+/* Footer styles */\
+footer \{\
+    grid-area: footer;\
+    background-color: #2C5282;\
+    color: #FFFFFF;\
+    text-align: center;\
+    padding: 20px;\
+\}\
+\
+/* Responsive adjustments */\
+@media (max-width: 768px) \{\
+    .container \{\
+        grid-template-columns: 1fr;\
+        grid-template-areas:\
+            "header"\
+            "main"\
+            "aside"\
+            "footer";\
+    \}\
+    \
+    .blog-image, .blog-image-right \{\
+        float: none;\
+        display: block;\
+        margin: 0 auto 15px;\
+        max-width: 100%;\
+    \}\
+\}}
